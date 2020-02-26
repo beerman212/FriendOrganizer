@@ -1,7 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Navigation;
 using FriendOrganizer.UI.Data;
-using Model;
+using FriendOrganizer.Model;
+using System.Threading.Tasks;
 
 namespace FriendOrganizer.UI.ViewModels
 {
@@ -29,9 +30,9 @@ namespace FriendOrganizer.UI.ViewModels
 
         }
 
-        public void Load()
+        public async Task LoadAsync()
         {
-            var friends = _friendDataService.GetAll();
+            var friends = await _friendDataService.GetAllAsync();
 
             Friends.Clear();
 
