@@ -99,10 +99,6 @@
       <Project>{c8520553-50e2-479c-bf02-8ae8172e6fb0}</Project>
       <Name>FriendOrganizer.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{351f1186-2be5-4ccd-b6ed-8fb1a7cb71a4}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
